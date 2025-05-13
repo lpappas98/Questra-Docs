@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - World Planner</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h1, h2, h3 {
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        h1 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">← Back to Home</a>
+    <div id="content">
+        <!-- Content will be loaded here -->
+        <p>Loading privacy policy...</p>
+    </div>
+
+    <script>
+        // Fetch and display the privacy policy markdown
+        fetch('privacy_policy.md')
+            .then(response => response.text())
+            .then(text => {
+                // For a proper markdown renderer, you might want to include a library like marked.js
+                // For now, we'll do a simple conversion of the markdown headings and paragraphs
+                const formatted = text
+                    .replace(/^# (.*$)/gm, '<h1>$1</h1>')
+                    .replace(/^## (.*$)/gm, '<h2>$1</h2>')
+                    .replace(/^### (.*$)/gm, '<h3>$1</h3>')
+                    .replace(/^- (.*$)/gm, '<li>$1</li>')
+                    .replace(/\n\n/gm, '</p><p>')
+                    .replace(/\n/gm, '<br>');
+                
+                document.getElementById('content').innerHTML = `<p>${formatted}</p>`;
+            })
+            .catch(error => {
+                document.getElementById('content').innerHTML = 
+                    `<p>Error loading privacy policy: ${error.message}</p>`;
+            });
+    </script>
+</body>
+</html> 
