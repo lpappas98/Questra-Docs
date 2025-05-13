@@ -1,10 +1,10 @@
-# Privacy Policy for World Planner
+# Privacy Policy for Questra
 
-Last Updated: [Current Date]
+Last Updated: 5/12/2025
 
 ## Introduction
 
-Welcome to World Planner. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you about how we look after your personal data when you use our application and tell you about your privacy rights and how the law protects you.
+Welcome to Questra. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you about how we look after your personal data when you use our application and tell you about your privacy rights and how the law protects you.
 
 ## 1. Information We Collect
 
@@ -78,9 +78,7 @@ We may update this privacy policy from time to time. We will notify you of any c
 ## 9. Contact Us
 
 If you have any questions about this Privacy Policy, please contact us at:
-- Email: [Your Contact Email]
-- Website: [Your Website]
-- Address: [Your Business Address]
+- Email: logan@innerlight.dev
 
 ## 10. Compliance with Laws
 
